@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>Name</th>
+			<th>Main</th>
+			<th>Main Amount</th>
+			<th>Second</th>
+			<th>Second Amount</th>
+			<th>Directions</th>
+		</tr>
+		<tr th:each="drink : ${drinks}">
+			<td th:text = "${drink.drinkName}"></td>
+			<td th:text = "${drink.main}"></td>
+			<td th:text = "${drink.mainAmount}"></td>
+			<td th:text = "${drink.second}"></td>
+			<td th:text = "${drink.secondAmount}"></td>
+			<td th:text = "${drink.directions}"></td>
+		</tr>
+	</table>
+</body>
+</html>
